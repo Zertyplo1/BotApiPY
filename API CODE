@@ -1,0 +1,11 @@
+https://api.telegram.org/bot-YourBOTToken-/getUpdates
+
+def telegram_hit(texto):
+    import urllib
+    try:
+        texto = urllib.parse.quote(texto)
+        #https://api.telegram.org/bot:(...)/getUpdates
+        url = "https://api.telegram.org/bot:(...)/sendmessage?chat_id=-(...)&text="+texto
+        requests.post(url)
+    except requests.exceptions.RequestException as e:  # This is the correct syntax
+        pass
