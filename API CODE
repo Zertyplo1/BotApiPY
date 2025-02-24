@@ -1,3 +1,5 @@
+Remover (...) e colocar o texto
+
 https://api.telegram.org/bot-YourBOTToken-/getUpdates
 
 def telegram_hit(texto):
